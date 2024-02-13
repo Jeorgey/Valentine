@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Valentine</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <img src="giphy.gif">
+            <img src="giphy.gif" style="transform: scaleX(-1); float: right;">
+            <p>Will you be my Valentine?</p>
+            <div class="button" id="button">
+                <button id="noButton">No</button>
+            </div>
+            <div class="button2" id="button2">
+                <button id="yesButton">Yes</button>
+            </div>
+            <img id="singleHeart" src="giphy2.gif">
+            <img class="im" id="im" src="giphy3.gif">
+        </main>
+        <script>
+            var d = document.getElementById("button");
+            var e = document.getElementById("button2");
+            var i = document.getElementById("im");
+            d.addEventListener('click',function(){d.className = d.className + " move"; e.className = e.className + " move"});
+            e.addEventListener('click',function(){i.className = i.className + " appear"})
+        </script>
+    </body>
+</html>

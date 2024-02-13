@@ -1,0 +1,99 @@
+body {
+    background-color: rgba(248, 244, 245, 0.717);
+}
+
+button {
+    background-color: rgba(99, 99, 245, 0.912);
+    font-size: x-large;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+}
+
+p {
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(253, 152, 169);
+}
+
+#noButton {
+    position: relative;
+    left: 47.5vw;
+}
+
+.button.move{
+    animation-name: pressed;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.button2.move{
+    animation-name: pressed2;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+}
+
+@keyframes pressed {
+    from{
+        transform: rotateX(0deg);
+    }
+
+    to{
+        transform: rotateX(90deg);
+    }
+    
+}
+
+@keyframes pressed2 {
+    from{
+        transform: translateX(0vw);
+    }
+
+    to{
+        transform: translateX(66vw);
+    }
+    
+}
+
+#yesButton {
+    position: absolute;
+    top: -3vw;
+    left: -20vw;
+}
+
+#singleHeart {
+    display: block;
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vw;
+}
+
+.im {
+    position: relative;
+    opacity: 0;
+    float: left;
+    top: 17.5vw;
+}
+
+.im.appear {
+    position: relative;
+    float: left;
+    animation-name: appeared;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appeared {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+    
+}
